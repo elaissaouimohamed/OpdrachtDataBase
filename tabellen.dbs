@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="TEST" id="Project-c7f" database="SqlServer" >
+	<schema name="dbo" catalogname="TEST" >
+		<table name="Persoon" >
+			<comment><![CDATA[De persoon kan zowel klant zijn als begeleider zijn maar ook contactpersoon.]]></comment>
+			<column name="ID" type="int" jt="4" mandatory="y" />
+			<column name="lastName" type="varchar" length="100" jt="12" />
+			<column name="middleName" type="varchar" length="100" jt="12" />
+			<column name="firstName" type="varchar" length="100" jt="12" />
+			<column name="socialSecurityNumber" type="varchar" length="100" jt="12" />
+			<column name="passPortNumber" type="varchar" length="100" jt="12" />
+			<index name="pk_Persoon" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+	</schema>
+	<layout name="Default Layout" id="Layout-2635" show_relation="columns" >
+		<entity schema="TEST.dbo" name="Persoon" color="C1D8EE" x="352" y="192" />
+		<callout x="48" y="48" pointer="Round" >
+			<comment><![CDATA[This is a layout - a diagram with tools.
+- Right-click the layout to create new tables. 
+- Double-click table headers to edit. 
+- For a better understanding of the schema, create multiple layouts.
+- Save the design to the model file, and deploy from 'Schema / Create into the database'.]]></comment>
+		</callout>
+	</layout>
+</project>
